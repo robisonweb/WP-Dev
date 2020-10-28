@@ -1,0 +1,48 @@
+# Configurações GIT Sispel  19/08/2020
+# Autor: Robison Luiz Fernandes
+# E-mail : robisonweb@gmail.com
+#Pastas Locais
+_Bkp/*
+_notes/*
+.vscode/*
+
+#Pastas WP
+*.log
+
+wp-admin/
+wp-includes/
+wp-content/advanced-cache.php
+wp-content/backup-db/*
+wp-content/backups/*
+wp-content/cache/*
+wp-content/upgrade/
+wp-content/uploads/*
+wp-content/plugins/hello.php
+
+index.php
+.gitattributes
+wp-config.php
+LICENSE
+README.md
+/.htaccess
+/license.txt
+/readme.html
+/sitemap.xml
+/sitemap.xml.gz
+/wp-activate.php
+/wp-blog-header.php
+/wp-comments-post.php
+/wp-config-sample.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+
+
+
+
