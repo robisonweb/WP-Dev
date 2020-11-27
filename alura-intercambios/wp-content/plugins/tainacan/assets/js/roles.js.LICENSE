@@ -1,0 +1,861 @@
+/*!*************************************!*\
+  !*** ./node_modules/axios/index.js ***!
+  \*************************************/
+
+/*! no static exports found */
+
+/*! ./lib/axios */
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/adapters/xhr.js ***!
+  \************************************************/
+
+/*! ./../utils */
+
+/*! ./../core/settle */
+
+/*! ./../helpers/buildURL */
+
+/*! ./../helpers/parseHeaders */
+
+/*! ./../helpers/isURLSameOrigin */
+
+/*! ../core/createError */
+
+/*! ./../helpers/cookies */
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/axios.js ***!
+  \*****************************************/
+
+/*! ./utils */
+
+/*! ./helpers/bind */
+
+/*! ./core/Axios */
+
+/*! ./core/mergeConfig */
+
+/*! ./defaults */
+
+/*! ./cancel/Cancel */
+
+/*! ./cancel/CancelToken */
+
+/*! ./cancel/isCancel */
+
+/*! ./helpers/spread */
+
+/*!*************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/Cancel.js ***!
+  \*************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
+  \******************************************************/
+
+/*! ./Cancel */
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
+  \***************************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/axios/lib/core/Axios.js ***!
+  \**********************************************/
+
+/*! ../helpers/buildURL */
+
+/*! ./InterceptorManager */
+
+/*! ./dispatchRequest */
+
+/*! ./mergeConfig */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
+  \***********************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/createError.js ***!
+  \****************************************************/
+
+/*! ./enhanceError */
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
+  \********************************************************/
+
+/*! ./transformData */
+
+/*! ../cancel/isCancel */
+
+/*! ../defaults */
+
+/*! ./../helpers/isAbsoluteURL */
+
+/*! ./../helpers/combineURLs */
+
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/core/enhanceError.js ***!
+  \*****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
+  \****************************************************/
+
+/*! ../utils */
+
+/*!***********************************************!*\
+  !*** ./node_modules/axios/lib/core/settle.js ***!
+  \***********************************************/
+
+/*! ./createError */
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/transformData.js ***!
+  \******************************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/defaults.js ***!
+  \********************************************/
+
+/*! ./helpers/normalizeHeaderName */
+
+/*! ./adapters/http */
+
+/*! ./adapters/xhr */
+
+/*! ./../../process/browser.js */
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/bind.js ***!
+  \************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
+  \****************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
+  \*******************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/cookies.js ***!
+  \***************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
+  \*********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
+  \***********************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
+  \***************************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
+  \********************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/spread.js ***!
+  \**************************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/utils.js ***!
+  \*****************************************/
+
+/*! is-buffer */
+
+/*!************************************************************!*\
+  !*** ./node_modules/axios/node_modules/is-buffer/index.js ***!
+  \************************************************************/
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!****************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/role-edition-form.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************/
+
+/*! exports provided: default */
+
+/*! vuex */
+
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/roles-list.vue?vue&type=script&lang=js& ***!
+  \*********************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/roles.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************/
+
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/role-edition-form.vue?vue&type=style&index=0&id=58a0ef2c&lang=scss&scoped=true& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! ../../../../node_modules/css-loader/lib/css-base.js */
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/roles-list.vue?vue&type=style&index=0&id=e884a13a&lang=scss&scoped=true& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!*************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/roles.vue?vue&type=style&index=0&lang=scss& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************/
+
+/*! ../../../node_modules/css-loader/lib/css-base.js */
+
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/popper.js/dist/esm/popper.js ***!
+  \***************************************************/
+
+/**!
+ * @fileOverview Kickass library to create and place poppers near their reference elements.
+ * @version 1.16.0
+ * @license
+ * Copyright (c) 2016 Federico Zivolo and contributors
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+/*! ./../../../webpack/buildin/global.js */
+
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+
+/*!****************************************!*\
+  !*** ./node_modules/qs/lib/formats.js ***!
+  \****************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/index.js ***!
+  \**************************************/
+
+/*! ./stringify */
+
+/*! ./parse */
+
+/*! ./formats */
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/parse.js ***!
+  \**************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/qs/lib/stringify.js ***!
+  \******************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/utils.js ***!
+  \**************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/setimmediate/setImmediate.js ***!
+  \***************************************************/
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./../process/browser.js */
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/role-edition-form.vue?vue&type=style&index=0&id=58a0ef2c&lang=scss&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./role-edition-form.vue?vue&type=style&index=0&id=58a0ef2c&lang=scss&scoped=true& */
+
+/*! ../../../../node_modules/style-loader/lib/addStyles.js */
+
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/roles-list.vue?vue&type=style&index=0&id=e884a13a&lang=scss&scoped=true& ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! !../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./roles-list.vue?vue&type=style&index=0&id=e884a13a&lang=scss&scoped=true& */
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/roles.vue?vue&type=style&index=0&lang=scss& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! !../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../node_modules/vue-loader/lib??vue-loader-options!./roles.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ../../../node_modules/style-loader/lib/addStyles.js */
+
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+
+/*! ./urls */
+
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+
+/*!*****************************!*\
+  !*** ./node_modules/t/t.js ***!
+  \*****************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/timers-browserify/main.js ***!
+  \************************************************/
+
+/*! setimmediate */
+
+/*!******************************************************!*\
+  !*** ./node_modules/v-tooltip/dist/v-tooltip.esm.js ***!
+  \******************************************************/
+
+/*! exports provided: default, VClosePopover, VPopover, VTooltip, createTooltip, destroyTooltip, install */
+
+/*! popper.js */
+
+/*! vue-resize */
+
+/*! ./../../webpack/buildin/global.js */
+
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/role-edition-form.vue?vue&type=template&id=58a0ef2c&scoped=true& ***!
+  \******************************************************************************************************************************************************************************************************************************/
+
+/*! exports provided: render, staticRenderFns */
+
+/*!***********************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/pages/roles-list.vue?vue&type=template&id=e884a13a&scoped=true& ***!
+  \***********************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/views/roles/roles.vue?vue&type=template&id=d651f422& ***!
+  \************************************************************************************************************************************************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/vue-resize/dist/vue-resize.esm.js ***!
+  \********************************************************/
+
+/*! exports provided: install, ResizeObserver, default */
+
+/*!********************************************************!*\
+  !*** ./node_modules/vue-router/dist/vue-router.esm.js ***!
+  \********************************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/vue/dist/vue.min.js ***!
+  \******************************************/
+
+/*!
+ * Vue.js v2.6.11
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/*! ./../../timers-browserify/main.js */
+
+/*!********************************************!*\
+  !*** ./node_modules/vuex/dist/vuex.esm.js ***!
+  \********************************************/
+
+/*! exports provided: Store, install, mapState, mapMutations, mapGetters, mapActions, createNamespacedHelpers, default */
+
+/**
+ * vuex v3.0.1
+ * (c) 2017 Evan You
+ * @license MIT
+ */
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+
+/*!*************************************!*\
+  !*** ./src/views/admin/js/axios.js ***!
+  \*************************************/
+
+/*! exports provided: tainacan, wp, CancelToken, isCancel, all, default */
+
+/*! axios */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/activity/actions.js ***!
+  \**************************************************************/
+
+/*! exports provided: fetchActivities, fetchCollectionActivities, fetchItemActivities, fetchActivity, fetchActivityTitle, approve, notApprove, fetchUsers, fetchUser */
+
+/*! ../../../axios */
+
+/*! qs */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/activity/getters.js ***!
+  \**************************************************************/
+
+/*! exports provided: getActivities, getActivity, getActivityTitle */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/activity/index.js ***!
+  \************************************************************/
+
+/*! ./actions */
+
+/*! ./getters */
+
+/*! ./mutations */
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/activity/mutations.js ***!
+  \****************************************************************/
+
+/*! exports provided: setActivities, setActivity, setActivityTitle, clearActivity */
+
+/*!***************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bgprocess/actions.js ***!
+  \***************************************************************/
+
+/*! exports provided: fetchProcesses, updateProcess, heartBitUpdateProcess, fetchProcess, fetchProcessLog, fetchProcessErrorLog, cleanProcesses, deleteProcess */
+
+/*!***************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bgprocess/getters.js ***!
+  \***************************************************************/
+
+/*! exports provided: getProcesses, getProcess, getErrorLog, getLog */
+
+/*!*************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bgprocess/index.js ***!
+  \*************************************************************/
+
+/*!*****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bgprocess/mutations.js ***!
+  \*****************************************************************/
+
+/*! exports provided: setProcesses, cleanProcesses, setProcess, setProcessLog, setProcessErrorLog */
+
+/*! vue */
+
+/*!******************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bulk-edition/actions.js ***!
+  \******************************************************************/
+
+/*! exports provided: createEditGroup, fetchGroup, fetchSequenceGroup, setValueInBulk, addValueInBulk, removeValueInBulk, clearValuesInBulk, replaceValueInBulk, setStatusInBulk, setCommentStatusInBulk, trashItemsInBulk, untrashItemsInBulk, deleteItemsInBulk, copyValuesInBulk, fetchItemIdInSequence, createSequenceEditGroup */
+
+/*!******************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bulk-edition/getters.js ***!
+  \******************************************************************/
+
+/*! exports provided: getGroupId, getGroup, getItemIdInSequence, getLastUpdated */
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bulk-edition/index.js ***!
+  \****************************************************************/
+
+/*! ./actions.js */
+
+/*! ./mutations.js */
+
+/*! ./getters.js */
+
+/*!********************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/bulk-edition/mutations.js ***!
+  \********************************************************************/
+
+/*! exports provided: setGroup, setItemIdInSequence, setLastUpdated */
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/capability/actions.js ***!
+  \****************************************************************/
+
+/*! exports provided: addCapabilityToRole, removeCapabilityFromRole, fetchRoles, fetchRole, createRole, updateRole, deleteRole, fetchCapabilities, fetchCapability */
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/capability/getters.js ***!
+  \****************************************************************/
+
+/*! exports provided: getRoles, getRole, getCapability, getCapabilities */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/capability/index.js ***!
+  \**************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/capability/mutations.js ***!
+  \******************************************************************/
+
+/*! exports provided: addCapabilityToRole, removeCapabilityFromRole, setRoles, setRole, deleteRole, setCapabilities, setCapability */
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/collection/actions.js ***!
+  \****************************************************************/
+
+/*! exports provided: fetchItems, deleteItem, fetchCollections, cleanCollections, cleanItems, cleanCollection, fetchCollection, fetchCollectionBasics, fetchCollectionForExposer, deleteCollection, updateCollection, sendCollection, setItems, sendAttachment, fetchAttachments, updateThumbnail, updateHeaderImage, fetchPages, fetchPage, fetchAllCollectionNames, sendFile, cleanFiles */
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/collection/getters.js ***!
+  \****************************************************************/
+
+/*! exports provided: getItems, getItemsListTemplate, getCollections, getCollection, getAttachments, getFiles, getRepositoryTotalCollections */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/collection/index.js ***!
+  \**************************************************************/
+
+/*!******************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/collection/mutations.js ***!
+  \******************************************************************/
+
+/*! exports provided: setRepositoryTotalCollections, setItems, setItemsListTemplate, cleanItems, deleteItem, deleteCollection, setCollections, cleanCollections, setCollection, cleanCollection, setSingleAttachment, setSingleFile, cleanFiles, setAttachments, cleanAttachments */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exporter/actions.js ***!
+  \**************************************************************/
+
+/*! exports provided: fetchAvailableExporters, createExporterSession, updateExporterSession, runExporterSession */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exporter/getters.js ***!
+  \**************************************************************/
+
+/*! exports provided: getExporterSession, getBGProccessID */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exporter/index.js ***!
+  \************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exporter/mutations.js ***!
+  \****************************************************************/
+
+/*! exports provided: setExporterSession, setBackGroundProcessID */
+
+/*!*************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exposer/actions.js ***!
+  \*************************************************************/
+
+/*! exports provided: fetchAvailableExposers */
+
+/*!*************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exposer/getters.js ***!
+  \*************************************************************/
+
+/*! exports provided: getAvailableExposers */
+
+/*!***********************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exposer/index.js ***!
+  \***********************************************************/
+
+/*!***************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/exposer/mutations.js ***!
+  \***************************************************************/
+
+/*! exports provided: setAvailableExposers */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/filter/actions.js ***!
+  \************************************************************/
+
+/*! exports provided: fetchFilters, sendFilter, updateFilter, updateFilters, deleteFilter, deleteTemporaryFilter, addTemporaryFilter, updateCollectionFiltersOrder, fetchFilterTypes, updateFilteTypes, fetchRepositoryCollectionFilters, fetchTaxonomyFilters */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/filter/getters.js ***!
+  \************************************************************/
+
+/*! exports provided: getPostQuery, getMetaQuery, getTaxQuery, getFilters, getFilterTypes, getRepositoryCollectionFilters, getTaxonomyFilters */
+
+/*!**********************************************************!*\
+  !*** ./src/views/admin/js/store/modules/filter/index.js ***!
+  \**********************************************************/
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/filter/mutations.js ***!
+  \**************************************************************/
+
+/*! exports provided: deleteFilter, addTemporaryFilter, deleteTemporaryFilter, setSingleFilter, setFilters, updateFiltersOrderFromCollection, setFilterTypes, setRepositoryCollectionFilters, clearRepositoryCollectionFilters, setTaxonomyFilters, setTaxonomyFiltersForCollection, clearTaxonomyFilters */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/importer/actions.js ***!
+  \**************************************************************/
+
+/*! exports provided: fetchAvailableImporters, fetchImporter, sendImporter, updateImporter, updateImporterCollection, updateImporterURL, updateImporterOptions, updateImporterFile, fetchImporterSourceInfo, runImporter, fetchMappingImporter */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/importer/getters.js ***!
+  \**************************************************************/
+
+/*! exports provided: getgetAvailableImporters, getImporter, getImporterSourceInfo, getImporterFile, getImporterMapping */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/importer/index.js ***!
+  \************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/importer/mutations.js ***!
+  \****************************************************************/
+
+/*! exports provided: setAvailableImporters, setImporter, setImporterFile, setImporterSourceInfo, setMappingImporter */
+
+/*!**********************************************************!*\
+  !*** ./src/views/admin/js/store/modules/item/actions.js ***!
+  \**********************************************************/
+
+/*! exports provided: updateItemMetadatum, fetchItemMetadata, fetchCompoundFirstParentMetaId, deleteItemMetadataGroup, cleanItemMetadata, cleanLastUpdated, setLastUpdated, fetchItem, replaceItem, fetchItemTitle, sendItem, updateItem, duplicateItem, updateItemDocument, sendAttachment, removeAttachmentFromItem, deletePermanentlyAttachment, fetchAttachments, updateThumbnail */
+
+/*!**********************************************************!*\
+  !*** ./src/views/admin/js/store/modules/item/getters.js ***!
+  \**********************************************************/
+
+/*! exports provided: getItemMetadata, getItem, getLastUpdated, getItemTitle, getAttachments, getTotalAttachments */
+
+/*!********************************************************!*\
+  !*** ./src/views/admin/js/store/modules/item/index.js ***!
+  \********************************************************/
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/item/mutations.js ***!
+  \************************************************************/
+
+/*! exports provided: setItem, cleanItem, cleanLastUpdated, setSingleAttachment, setAttachments, removeAttatchmentFromItem, cleanAttachment, cleanAttachments, setTotalAttachments, setItemTitle, cleanItemTitle, setItemMetadata, cleanItemMetadata, setSingleMetadatum, deleteChildItemMetadata, setLastUpdated */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/metadata/actions.js ***!
+  \**************************************************************/
+
+/*! exports provided: fetchMetadata, sendMetadatum, updateMetadatum, fetchMetadatum, updateMetadata, deleteMetadatum, cleanMetadata, updateCollectionMetadataOrder, updateChildMetadataOrder, fetchMetadatumTypes, updateMetadatumTypes, fetchMetadatumMappers, updateMetadataMapperMetadata, updateMetadatumMappers */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/metadata/getters.js ***!
+  \**************************************************************/
+
+/*! exports provided: getMetadata, getMetadatumTypes, getMetadatumMappers */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/metadata/index.js ***!
+  \************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/metadata/mutations.js ***!
+  \****************************************************************/
+
+/*! exports provided: deleteMetadatum, setSingleMetadatum, setMetadata, updateMetadataOrderFromCollection, setMetadatumTypes, setMetadatumMappers, cleanMetadata */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/search/actions.js ***!
+  \************************************************************/
+
+/*! exports provided: set_postquery_attribute, set_postquery, set_advanced_query, add_metaquery, add_fetch_only, remove_fetch_only, add_fetch_only_meta, remove_fetch_only_meta, add_taxquery, remove_metaquery, remove_taxquery, setTotalItems, setTotalPages, setPage, setItemsPerPage, setFacets, setStatus, setOrderBy, setOrder, setOrderByName, setSearchQuery, setViewMode, setAdminViewMode, addFilterTag, removeFilterTag, cleanFilterTags, cleanMetaQueries, cleanTaxQueries, cleanFetchOnly, setSelectedItems, addSelectedItem, cleanSelectedItems, removeSelectedItem, highlightsItem */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/search/getters.js ***!
+  \************************************************************/
+
+/*! exports provided: getPostQuery, getAdvancedSearchQuery, getMetaQuery, getTaxQuery, getTotalItems, getTotalPages, getPage, getItemsPerPage, getOrder, getOrderBy, getSearchQuery, getStatus, getViewMode, getAdminViewMode, getFetchOnly, getOrderByName, getMetaKey, getFetchOnlyMeta, getFilterTags, getFacets, getSelectedItems, getHighlightedItem */
+
+/*!**********************************************************!*\
+  !*** ./src/views/admin/js/store/modules/search/index.js ***!
+  \**********************************************************/
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/search/mutations.js ***!
+  \**************************************************************/
+
+/*! exports provided: setPostQueryAttribute, removePostQueryAttribute, setPostQuery, setAdvancedSearchQuery, addMetaQuery, addTaxQuery, addFetchOnly, addFetchOnlyMeta, removeFetchOnly, removeFetchOnlyMeta, removeMetaQuery, removeTaxQuery, setTotalItems, setTotalPages, setItemsPerPage, setSearchQuery, setStatus, setViewMode, setAdminViewMode, setOrderByName, addFilterTag, removeFilterTag, cleanFilterTags, cleanMetaQueries, cleanTaxQueries, cleanFetchOnly, setFacets, setSelectedItems, cleanSelectedItems, addSelectedItem, removeSelectedItem, setHighlightedItem */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/taxonomy/actions.js ***!
+  \**************************************************************/
+
+/*! exports provided: createTaxonomy, deleteTaxonomy, updateTaxonomy, fetch, fetchTaxonomy, fetchTaxonomyName, sendTerm, deleteTerm, updateTerm, fetchTerms, fetchChildTerms, sendChildTerm, updateChildTerm, updateChildTermLocal, deleteChildTerm, clearTerms, fetchPossibleParentTerms, fetchParentName */
+
+/*!**************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/taxonomy/getters.js ***!
+  \**************************************************************/
+
+/*! exports provided: getTaxonomy, get, getTaxonomyName, getTerms, getRepositoryTotalTaxonomies */
+
+/*!************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/taxonomy/index.js ***!
+  \************************************************************/
+
+/*!****************************************************************!*\
+  !*** ./src/views/admin/js/store/modules/taxonomy/mutations.js ***!
+  \****************************************************************/
+
+/*! exports provided: setRepositoryTotalTaxonomies, setTaxonomy, set, setTaxonomyName, deleteTaxonomy, setSingleTerm, setTerms, clearTerms, setChildTerms, addChildTerm, updateChildTerm, deleteChildTerm, deleteTerm */
+
+/*! t */
+
+/*!*******************************************!*\
+  !*** ./src/views/admin/js/store/store.js ***!
+  \*******************************************/
+
+/*! ./modules/item */
+
+/*! ./modules/collection */
+
+/*! ./modules/metadata */
+
+/*! ./modules/filter */
+
+/*! ./modules/search */
+
+/*! ./modules/taxonomy */
+
+/*! ./modules/activity */
+
+/*! ./modules/importer */
+
+/*! ./modules/bgprocess */
+
+/*! ./modules/bulk-edition */
+
+/*! ./modules/exporter */
+
+/*! ./modules/exposer */
+
+/*! ./modules/capability */
+
+/*!******************************************!*\
+  !*** ./src/views/roles/js/roles-main.js ***!
+  \******************************************/
+
+/*! no exports provided */
+
+/*! ../../admin/js/store/store */
+
+/*! ./roles-router */
+
+/*! v-tooltip */
+
+/*! ./wp-i18n-plugin */
+
+/*! ../roles.vue */
+
+/*!********************************************!*\
+  !*** ./src/views/roles/js/roles-router.js ***!
+  \********************************************/
+
+/*! vue-router */
+
+/*! ../pages/roles-list.vue */
+
+/*! ../pages/role-edition-form.vue */
+
+/*!**********************************************!*\
+  !*** ./src/views/roles/js/wp-i18n-plugin.js ***!
+  \**********************************************/
+
+/*! exports provided: I18NPlugin */
+
+/*!*****************************************************!*\
+  !*** ./src/views/roles/pages/role-edition-form.vue ***!
+  \*****************************************************/
+
+/*! ./role-edition-form.vue?vue&type=template&id=58a0ef2c&scoped=true& */
+
+/*! ./role-edition-form.vue?vue&type=script&lang=js& */
+
+/*! ./role-edition-form.vue?vue&type=style&index=0&id=58a0ef2c&lang=scss&scoped=true& */
+
+/*! ../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*!******************************************************************************!*\
+  !*** ./src/views/roles/pages/role-edition-form.vue?vue&type=script&lang=js& ***!
+  \******************************************************************************/
+
+/*! -!../../../../node_modules/babel-loader/lib!../../../../node_modules/vue-loader/lib??vue-loader-options!./role-edition-form.vue?vue&type=script&lang=js& */
+
+/*!***************************************************************************************************************!*\
+  !*** ./src/views/roles/pages/role-edition-form.vue?vue&type=style&index=0&id=58a0ef2c&lang=scss&scoped=true& ***!
+  \***************************************************************************************************************/
+
+/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./role-edition-form.vue?vue&type=style&index=0&id=58a0ef2c&lang=scss&scoped=true& */
+
+/*!************************************************************************************************!*\
+  !*** ./src/views/roles/pages/role-edition-form.vue?vue&type=template&id=58a0ef2c&scoped=true& ***!
+  \************************************************************************************************/
+
+/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./role-edition-form.vue?vue&type=template&id=58a0ef2c&scoped=true& */
+
+/*!**********************************************!*\
+  !*** ./src/views/roles/pages/roles-list.vue ***!
+  \**********************************************/
+
+/*! ./roles-list.vue?vue&type=template&id=e884a13a&scoped=true& */
+
+/*! ./roles-list.vue?vue&type=script&lang=js& */
+
+/*! ./roles-list.vue?vue&type=style&index=0&id=e884a13a&lang=scss&scoped=true& */
+
+/*!***********************************************************************!*\
+  !*** ./src/views/roles/pages/roles-list.vue?vue&type=script&lang=js& ***!
+  \***********************************************************************/
+
+/*! -!../../../../node_modules/babel-loader/lib!../../../../node_modules/vue-loader/lib??vue-loader-options!./roles-list.vue?vue&type=script&lang=js& */
+
+/*!********************************************************************************************************!*\
+  !*** ./src/views/roles/pages/roles-list.vue?vue&type=style&index=0&id=e884a13a&lang=scss&scoped=true& ***!
+  \********************************************************************************************************/
+
+/*! -!../../../../node_modules/style-loader!../../../../node_modules/css-loader!../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../../node_modules/vue-loader/lib??vue-loader-options!./roles-list.vue?vue&type=style&index=0&id=e884a13a&lang=scss&scoped=true& */
+
+/*!*****************************************************************************************!*\
+  !*** ./src/views/roles/pages/roles-list.vue?vue&type=template&id=e884a13a&scoped=true& ***!
+  \*****************************************************************************************/
+
+/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib??vue-loader-options!./roles-list.vue?vue&type=template&id=e884a13a&scoped=true& */
+
+/*!***********************************!*\
+  !*** ./src/views/roles/roles.vue ***!
+  \***********************************/
+
+/*! ./roles.vue?vue&type=template&id=d651f422& */
+
+/*! ./roles.vue?vue&type=script&lang=js& */
+
+/*! ./roles.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*!************************************************************!*\
+  !*** ./src/views/roles/roles.vue?vue&type=script&lang=js& ***!
+  \************************************************************/
+
+/*! -!../../../node_modules/babel-loader/lib!../../../node_modules/vue-loader/lib??vue-loader-options!./roles.vue?vue&type=script&lang=js& */
+
+/*!*********************************************************************!*\
+  !*** ./src/views/roles/roles.vue?vue&type=style&index=0&lang=scss& ***!
+  \*********************************************************************/
+
+/*! -!../../../node_modules/style-loader!../../../node_modules/css-loader!../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../node_modules/vue-loader/lib??vue-loader-options!./roles.vue?vue&type=style&index=0&lang=scss& */
+
+/*!******************************************************************!*\
+  !*** ./src/views/roles/roles.vue?vue&type=template&id=d651f422& ***!
+  \******************************************************************/
+
+/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib??vue-loader-options!./roles.vue?vue&type=template&id=d651f422& */

@@ -13,3 +13,4 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 if(!defined(name,'ABSPATH')){
     die;
 }
+require_once plugin_dir_path( file:__FILE__ ).'/includes/al_patrocionadores_palestras.php';

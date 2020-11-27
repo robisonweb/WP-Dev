@@ -200,7 +200,7 @@ final class Search_Console extends Module
 					list ( $start_date, $end_date ) = $this->parse_date_range(
 						$data['dateRange'] ?: 'last-28-days',
 						$data['compareDateRanges'] ? 2 : 1,
-						3
+						1
 					);
 				}
 
@@ -277,7 +277,7 @@ final class Search_Console extends Module
 				return $this->get_webmasters_service()->sites->listSites();
 		}
 
-		throw new Invalid_Datapoint_Exception();
+		return parent::create_data_request( $data );
 	}
 
 	/**
@@ -323,7 +323,7 @@ final class Search_Console extends Module
 				return $this->map_sites( (array) $response->getSiteEntry() );
 		}
 
-		return $response;
+		return parent::parse_data_response( $data, $response );
 	}
 
 	/**
@@ -402,7 +402,7 @@ final class Search_Console extends Module
 			$single_url_filter = new Google_Service_Webmasters_ApiDimensionFilter();
 			$single_url_filter->setDimension( 'page' );
 			$single_url_filter->setOperator( 'equals' );
-			$single_url_filter->setExpression( esc_url_raw( $args['page'] ) );
+			$single_url_filter->setExpression( rawurldecode( esc_url_raw( $args['page'] ) ) );
 			$filters[] = $single_url_filter;
 		}
 

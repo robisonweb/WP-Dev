@@ -118,6 +118,10 @@ You can have only one question per poll.
 
 == Changelog ==
 
+= 6.2.2 =
+* fixed issue with polls loading with ajax
+* added %VOTER-FIRST-NAME%, %VOTER-LAST-NAME%, %VOTER-EMAIL%, %VOTER-USERNAME% to new vote email notifications
+
 = 6.2.1 =
 * removed 2 options from built in captcha
 * updated icons for View Results and Get Shortcode

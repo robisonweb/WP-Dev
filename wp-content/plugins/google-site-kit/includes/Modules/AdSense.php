@@ -132,6 +132,10 @@ final class AdSense extends Module
 					add_filter( // For AMP Reader, and AMP Native and Transitional (as fallback).
 						'the_content',
 						function( $content ) use ( $client_id ) {
+							// Only run for the primary application of the `the_content` filter.
+							if ( ! in_the_loop() ) {
+								return $content;
+							}
 							return $this->amp_content_add_auto_ads( $content, $client_id );
 						}
 					);
@@ -695,7 +699,7 @@ final class AdSense extends Module
 				};
 		}
 
-		throw new Invalid_Datapoint_Exception();
+		return parent::create_data_request( $data );
 	}
 
 	/**
@@ -730,7 +734,7 @@ final class AdSense extends Module
 				return $response;
 		}
 
-		return $response;
+		return parent::parse_data_response( $data, $response );
 	}
 
 	/**
@@ -810,16 +814,12 @@ final class AdSense extends Module
 					gmdate( $last_year . '-m-01' ),
 					gmdate( $last_year . '-m-' . $last_date_of_month ),
 				);
+			// Intentional fallthrough.
 			case 'prev-7-days':
-				return array(
-					gmdate( 'Y-m-d', strtotime( '14 days ago' ) ),
-					gmdate( 'Y-m-d', strtotime( '8 days ago' ) ),
-				);
+			case 'prev-14-days':
 			case 'prev-28-days':
-				return array(
-					gmdate( 'Y-m-d', strtotime( '56 days ago' ) ),
-					gmdate( 'Y-m-d', strtotime( '29 days ago' ) ),
-				);
+			case 'prev-90-days':
+				return $this->parse_date_range( $date_range, 1, 1, true );
 			// Intentional fallthrough.
 			case 'last-7-days':
 			case 'last-14-days':

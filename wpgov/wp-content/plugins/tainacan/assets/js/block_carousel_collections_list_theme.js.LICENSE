@@ -1,0 +1,370 @@
+/*!*************************************!*\
+  !*** ./node_modules/axios/index.js ***!
+  \*************************************/
+
+/*! no static exports found */
+
+/*! ./lib/axios */
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/adapters/xhr.js ***!
+  \************************************************/
+
+/*! ./../utils */
+
+/*! ./../core/settle */
+
+/*! ./../helpers/buildURL */
+
+/*! ./../helpers/parseHeaders */
+
+/*! ./../helpers/isURLSameOrigin */
+
+/*! ../core/createError */
+
+/*! ./../helpers/cookies */
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/axios.js ***!
+  \*****************************************/
+
+/*! ./utils */
+
+/*! ./helpers/bind */
+
+/*! ./core/Axios */
+
+/*! ./core/mergeConfig */
+
+/*! ./defaults */
+
+/*! ./cancel/Cancel */
+
+/*! ./cancel/CancelToken */
+
+/*! ./cancel/isCancel */
+
+/*! ./helpers/spread */
+
+/*!*************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/Cancel.js ***!
+  \*************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
+  \******************************************************/
+
+/*! ./Cancel */
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
+  \***************************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/axios/lib/core/Axios.js ***!
+  \**********************************************/
+
+/*! ../helpers/buildURL */
+
+/*! ./InterceptorManager */
+
+/*! ./dispatchRequest */
+
+/*! ./mergeConfig */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
+  \***********************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/createError.js ***!
+  \****************************************************/
+
+/*! ./enhanceError */
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
+  \********************************************************/
+
+/*! ./transformData */
+
+/*! ../cancel/isCancel */
+
+/*! ../defaults */
+
+/*! ./../helpers/isAbsoluteURL */
+
+/*! ./../helpers/combineURLs */
+
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/core/enhanceError.js ***!
+  \*****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
+  \****************************************************/
+
+/*! ../utils */
+
+/*!***********************************************!*\
+  !*** ./node_modules/axios/lib/core/settle.js ***!
+  \***********************************************/
+
+/*! ./createError */
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/transformData.js ***!
+  \******************************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/defaults.js ***!
+  \********************************************/
+
+/*! ./helpers/normalizeHeaderName */
+
+/*! ./adapters/http */
+
+/*! ./adapters/xhr */
+
+/*! ./../../process/browser.js */
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/bind.js ***!
+  \************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
+  \****************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
+  \*******************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/cookies.js ***!
+  \***************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
+  \*********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
+  \***********************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
+  \***************************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
+  \********************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/spread.js ***!
+  \**************************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/utils.js ***!
+  \*****************************************/
+
+/*! is-buffer */
+
+/*!************************************************************!*\
+  !*** ./node_modules/axios/node_modules/is-buffer/index.js ***!
+  \************************************************************/
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+
+/*! exports provided: default */
+
+/*! axios */
+
+/*! qs */
+
+/*! swiper/dist/css/swiper.css */
+
+/*! vue-awesome-swiper */
+
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src!./node_modules/swiper/dist/css/swiper.css ***!
+  \*************************************************************************************************************/
+
+/*! ../../../css-loader/lib/css-base.js */
+
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! ../../../../../node_modules/css-loader/lib/css-base.js */
+
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+
+/*!****************************************!*\
+  !*** ./node_modules/qs/lib/formats.js ***!
+  \****************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/index.js ***!
+  \**************************************/
+
+/*! ./stringify */
+
+/*! ./parse */
+
+/*! ./formats */
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/parse.js ***!
+  \**************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/qs/lib/stringify.js ***!
+  \******************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/utils.js ***!
+  \**************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/setimmediate/setImmediate.js ***!
+  \***************************************************/
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./../process/browser.js */
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/lib/loader.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ../../../../../node_modules/style-loader/lib/addStyles.js */
+
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+
+/*! ./urls */
+
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/swiper/dist/css/swiper.css ***!
+  \*************************************************/
+
+/*! !../../../css-loader!../../../postcss-loader/src!./swiper.css */
+
+/*! ../../../vue-style-loader/lib/addStylesClient.js */
+
+/*!***********************************************!*\
+  !*** ./node_modules/swiper/dist/js/swiper.js ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/timers-browserify/main.js ***!
+  \************************************************/
+
+/*! setimmediate */
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js ***!
+  \********************************************************************/
+
+/*! swiper/dist/js/swiper.js */
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*! exports provided: render, staticRenderFns */
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/vue-style-loader/lib/addStylesClient.js ***!
+  \**************************************************************/
+
+/*! ./listToStyles */
+
+/*!***********************************************************!*\
+  !*** ./node_modules/vue-style-loader/lib/listToStyles.js ***!
+  \***********************************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/vue/dist/vue.min.js ***!
+  \******************************************/
+
+/*!
+ * Vue.js v2.6.11
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/*! ./../../webpack/buildin/global.js */
+
+/*! ./../../timers-browserify/main.js */
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+
+/*!**********************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.js ***!
+  \**********************************************************************************************************************/
+
+/*! no exports provided */
+
+/*! vue */
+
+/*! ./carousel-collections-list-theme.vue */
+
+/*!***********************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue ***!
+  \***********************************************************************************************************************/
+
+/*! ./carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& */
+
+/*! ./carousel-collections-list-theme.vue?vue&type=script&lang=js& */
+
+/*! ./carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*!************************************************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************/
+
+/*! -!../../../../../node_modules/babel-loader/lib!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=script&lang=js& */
+
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& ***!
+  \*********************************************************************************************************************************************************/
+
+/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/sass-loader/lib/loader.js??ref--5-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& */
+
+/*!******************************************************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& ***!
+  \******************************************************************************************************************************************************/
+
+/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& */

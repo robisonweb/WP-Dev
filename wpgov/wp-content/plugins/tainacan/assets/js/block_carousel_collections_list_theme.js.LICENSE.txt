@@ -1,0 +1,361 @@
+/*!
+ * Vue.js v2.6.11
+ * (c) 2014-2019 Evan You
+ * Released under the MIT License.
+ */
+
+/*! !../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/sass-loader/dist/cjs.js??ref--5-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& */
+
+/*! !../../../css-loader!../../../postcss-loader/src!./swiper.css */
+
+/*! -!../../../../../node_modules/babel-loader/lib!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=script&lang=js& */
+
+/*! -!../../../../../node_modules/style-loader!../../../../../node_modules/css-loader!../../../../../node_modules/vue-loader/lib/loaders/stylePostLoader.js!../../../../../node_modules/sass-loader/dist/cjs.js??ref--5-2!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& */
+
+/*! -!../../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../../node_modules/vue-loader/lib??vue-loader-options!./carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& */
+
+/*! ../../../../../node_modules/css-loader/lib/css-base.js */
+
+/*! ../../../../../node_modules/style-loader/lib/addStyles.js */
+
+/*! ../../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */
+
+/*! ../../../css-loader/lib/css-base.js */
+
+/*! ../../../vue-style-loader/lib/addStylesClient.js */
+
+/*! ../cancel/isCancel */
+
+/*! ../core/buildFullPath */
+
+/*! ../core/createError */
+
+/*! ../defaults */
+
+/*! ../helpers/buildURL */
+
+/*! ../helpers/combineURLs */
+
+/*! ../helpers/isAbsoluteURL */
+
+/*! ../utils */
+
+/*! ./../../process/browser.js */
+
+/*! ./../../timers-browserify/main.js */
+
+/*! ./../../webpack/buildin/global.js */
+
+/*! ./../core/settle */
+
+/*! ./../helpers/buildURL */
+
+/*! ./../helpers/cookies */
+
+/*! ./../helpers/isURLSameOrigin */
+
+/*! ./../helpers/parseHeaders */
+
+/*! ./../process/browser.js */
+
+/*! ./../utils */
+
+/*! ./../webpack/buildin/global.js */
+
+/*! ./Cancel */
+
+/*! ./InterceptorManager */
+
+/*! ./adapters/xhr */
+
+/*! ./cancel/Cancel */
+
+/*! ./cancel/CancelToken */
+
+/*! ./cancel/isCancel */
+
+/*! ./carousel-collections-list-theme.vue */
+
+/*! ./carousel-collections-list-theme.vue?vue&type=script&lang=js& */
+
+/*! ./carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& */
+
+/*! ./carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& */
+
+/*! ./core/Axios */
+
+/*! ./core/mergeConfig */
+
+/*! ./createError */
+
+/*! ./defaults */
+
+/*! ./dispatchRequest */
+
+/*! ./enhanceError */
+
+/*! ./formats */
+
+/*! ./helpers/bind */
+
+/*! ./helpers/normalizeHeaderName */
+
+/*! ./helpers/spread */
+
+/*! ./lib/axios */
+
+/*! ./listToStyles */
+
+/*! ./mergeConfig */
+
+/*! ./parse */
+
+/*! ./stringify */
+
+/*! ./transformData */
+
+/*! ./urls */
+
+/*! ./utils */
+
+/*! axios */
+
+/*! exports provided: default */
+
+/*! exports provided: render, staticRenderFns */
+
+/*! no exports provided */
+
+/*! no static exports found */
+
+/*! qs */
+
+/*! setimmediate */
+
+/*! swiper/dist/css/swiper.css */
+
+/*! swiper/dist/js/swiper.js */
+
+/*! vue */
+
+/*! vue-awesome-swiper */
+
+/*!***********************************!*\
+  !*** (webpack)/buildin/global.js ***!
+  \***********************************/
+
+/*!*************************************!*\
+  !*** ./node_modules/axios/index.js ***!
+  \*************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/index.js ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/parse.js ***!
+  \**************************************/
+
+/*!**************************************!*\
+  !*** ./node_modules/qs/lib/utils.js ***!
+  \**************************************/
+
+/*!****************************************!*\
+  !*** ./node_modules/qs/lib/formats.js ***!
+  \****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/axios.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/axios/lib/utils.js ***!
+  \*****************************************/
+
+/*!*****************************************!*\
+  !*** ./node_modules/process/browser.js ***!
+  \*****************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/qs/lib/stringify.js ***!
+  \******************************************/
+
+/*!******************************************!*\
+  !*** ./node_modules/vue/dist/vue.min.js ***!
+  \******************************************/
+
+/*!********************************************!*\
+  !*** ./node_modules/axios/lib/defaults.js ***!
+  \********************************************/
+
+/*!**********************************************!*\
+  !*** ./node_modules/axios/lib/core/Axios.js ***!
+  \**********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/axios/lib/core/settle.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/style-loader/lib/urls.js ***!
+  \***********************************************/
+
+/*!***********************************************!*\
+  !*** ./node_modules/swiper/dist/js/swiper.js ***!
+  \***********************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/adapters/xhr.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/bind.js ***!
+  \************************************************/
+
+/*!************************************************!*\
+  !*** ./node_modules/timers-browserify/main.js ***!
+  \************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/Cancel.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/css-loader/lib/css-base.js ***!
+  \*************************************************/
+
+/*!*************************************************!*\
+  !*** ./node_modules/swiper/dist/css/swiper.css ***!
+  \*************************************************/
+
+/*!**************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/spread.js ***!
+  \**************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/isCancel.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/cookies.js ***!
+  \***************************************************/
+
+/*!***************************************************!*\
+  !*** ./node_modules/setimmediate/setImmediate.js ***!
+  \***************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/createError.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/core/mergeConfig.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/buildURL.js ***!
+  \****************************************************/
+
+/*!****************************************************!*\
+  !*** ./node_modules/style-loader/lib/addStyles.js ***!
+  \****************************************************/
+
+/*!*****************************************************!*\
+  !*** ./node_modules/axios/lib/core/enhanceError.js ***!
+  \*****************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/cancel/CancelToken.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/buildFullPath.js ***!
+  \******************************************************/
+
+/*!******************************************************!*\
+  !*** ./node_modules/axios/lib/core/transformData.js ***!
+  \******************************************************/
+
+/*!*******************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/combineURLs.js ***!
+  \*******************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/core/dispatchRequest.js ***!
+  \********************************************************/
+
+/*!********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/parseHeaders.js ***!
+  \********************************************************/
+
+/*!*********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
+  \*********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/core/InterceptorManager.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
+  \***********************************************************/
+
+/*!***********************************************************!*\
+  !*** ./node_modules/vue-style-loader/lib/listToStyles.js ***!
+  \***********************************************************/
+
+/*!**************************************************************!*\
+  !*** ./node_modules/vue-style-loader/lib/addStylesClient.js ***!
+  \**************************************************************/
+
+/*!***************************************************************!*\
+  !*** ./node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
+  \***************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-awesome-swiper/dist/vue-awesome-swiper.js ***!
+  \********************************************************************/
+
+/*!********************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/runtime/componentNormalizer.js ***!
+  \********************************************************************/
+
+/*!*************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/postcss-loader/src!./node_modules/swiper/dist/css/swiper.css ***!
+  \*************************************************************************************************************/
+
+/*!**********************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.js ***!
+  \**********************************************************************************************************************/
+
+/*!***********************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue ***!
+  \***********************************************************************************************************************/
+
+/*!************************************************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************************************************************/
+
+/*!******************************************************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& ***!
+  \******************************************************************************************************************************************************/
+
+/*!*********************************************************************************************************************************************************!*\
+  !*** ./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& ***!
+  \*********************************************************************************************************************************************************/
+
+/*!**********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=script&lang=js& ***!
+  \**********************************************************************************************************************************************************************************************************************************/
+
+/*!************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=template&id=71e3e7e9& ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/style-loader!./node_modules/css-loader!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/sass-loader/dist/cjs.js??ref--5-2!./node_modules/vue-loader/lib??vue-loader-options!./src/views/gutenberg-blocks/tainacan-collections/carousel-collections-list/carousel-collections-list-theme.vue?vue&type=style&index=0&lang=scss& ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/

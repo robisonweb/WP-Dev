@@ -182,7 +182,7 @@ class QMNQuizManager {
     public function qsm_get_question_quick_result(){
         global $wpdb;
         $question_id = isset($_POST['question_id']) ? intval($_POST['question_id']) : 0;
-        $answer = isset( $_POST['answer'] ) ? sanitize_textarea_field( $_POST['answer'] ) : '';
+        $answer = isset( $_POST['answer'] ) ? wp_kses_post( $_POST['answer'] ) : '';
         $question_array = $wpdb->get_row( "SELECT answer_array, question_answer_info FROM {$wpdb->prefix}mlw_questions WHERE question_id = ($question_id)", 'ARRAY_A' );
         $answer_array = unserialize($question_array['answer_array']);
         $correct_info_text = isset( $question_array['question_answer_info'] ) ? $question_array['question_answer_info'] : '';
@@ -190,8 +190,8 @@ class QMNQuizManager {
         $got_ans = false;
         $correct_answer = false;
         if($answer_array && $got_ans === false){
-            foreach ($answer_array as $key => $value) {
-                if($value[0] == $answer && $value[2] == 1){
+            foreach ($answer_array as $key => $value) {                
+                if( htmlspecialchars_decode( $value[0], ENT_QUOTES ) == $answer && $value[2] == 1 ){
                     $got_ans = true;
                     $correct_answer = true;
                     break;
@@ -556,7 +556,7 @@ class QMNQuizManager {
         wp_enqueue_style('qsm_model_css', plugins_url('../../css/qsm-admin.css', __FILE__));
         wp_enqueue_script('qsm_model_js', plugins_url('../../js/micromodal.min.js', __FILE__));
         wp_enqueue_script('qsm_quiz', plugins_url('../../js/qsm-quiz.js', __FILE__), array('wp-util', 'underscore', 'jquery', 'jquery-ui-tooltip', 'progress-bar'), $mlwQuizMasterNext->version);
-        wp_localize_script('qsm_quiz', 'qmn_ajax_object', array('ajaxurl' => admin_url('admin-ajax.php'), 'enable_quick_result_mc' => isset($options->enable_quick_result_mc) ? $options->enable_quick_result_mc : '','enable_result_after_timer_end' => isset($options->enable_result_after_timer_end) ? $options->enable_result_after_timer_end : '', 'quick_result_correct_text' => $options->quick_result_correct_answer_text, 'quick_result_wrong_text' => $options->quick_result_wrong_answer_text, 'multicheckbox_limit_reach' => __('Limit of choice is reached.', 'quiz-master-next'), 'enable_quick_correct_answer_info' => isset($options->enable_quick_correct_answer_info) ? $options->enable_quick_correct_answer_info : 0 ));
+        wp_localize_script('qsm_quiz', 'qmn_ajax_object', array('ajaxurl' => admin_url('admin-ajax.php'), 'enable_quick_result_mc' => isset($options->enable_quick_result_mc) ? $options->enable_quick_result_mc : '','enable_result_after_timer_end' => isset($options->enable_result_after_timer_end) ? $options->enable_result_after_timer_end : '', 'quick_result_correct_text' => $options->quick_result_correct_answer_text, 'quick_result_wrong_text' => $options->quick_result_wrong_answer_text, 'multicheckbox_limit_reach' => __('Limit of choice is reached.', 'quiz-master-next'), 'enable_quick_correct_answer_info' => isset($options->enable_quick_correct_answer_info) ? $options->enable_quick_correct_answer_info : 0, 'out_of_text' => __(' out of ', 'quiz-master-next') ));
         wp_enqueue_script( 'math_jax', '//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML' );
         global $qmn_total_questions;
         $qmn_total_questions = 0;
@@ -780,7 +780,7 @@ class QMNQuizManager {
                     ?>
                         <span class="pages_count">
                             <?php
-                            $text_c = $pages_count . ' out of ' .$total_pages_count;
+                            $text_c = $pages_count . __(' out of ', 'quiz-master-next') .$total_pages_count;
                             echo apply_filters('qsm_total_pages_count',$text_c,$pages_count,$total_pages_count);
                             ?>
                         </span>
@@ -861,7 +861,7 @@ class QMNQuizManager {
             global $mlw_qmn_section_count;
             $mlw_qmn_section_count += 1;
             $animation_effect = isset($qmn_quiz_options->quiz_animation) && $qmn_quiz_options->quiz_animation != '' ? ' animated ' . $qmn_quiz_options->quiz_animation : '';
-            $section_display .= "<div class='quiz_section $animation_effect quiz_begin slide$mlw_qmn_section_count'>";
+            $section_display .= "<div class='qsm-auto-page-row quiz_section $animation_effect quiz_begin'>";
 
             $message_before = wpautop(htmlspecialchars_decode($qmn_quiz_options->message_before, ENT_QUOTES));
             $message_before = apply_filters('mlw_qmn_template_variable_quiz_page', $message_before, $qmn_array_for_variables);
@@ -898,20 +898,31 @@ class QMNQuizManager {
         $question_id_list = '';
         $animation_effect = isset($qmn_quiz_options->quiz_animation) && $qmn_quiz_options->quiz_animation != '' ? ' animated ' . $qmn_quiz_options->quiz_animation : '';
         $enable_pagination_quiz = isset($qmn_quiz_options->enable_pagination_quiz) && $qmn_quiz_options->enable_pagination_quiz ? $qmn_quiz_options->enable_pagination_quiz : 0;
-        $pagination_optoin = $qmn_quiz_options->pagination;
+        $pagination_optoin = $qmn_quiz_options->pagination;        
         if($enable_pagination_quiz && $pagination_optoin){
             $total_pages_count = count($qmn_quiz_questions);
             $total_pagination = ceil($total_pages_count / $pagination_optoin);
         }
         $pages_count = 1;
+        $current_page_number = 1;
         foreach ($qmn_quiz_questions as $mlw_question) {
+            if( $pagination_optoin == 0 ){
+                $question_display .= "<div class='quiz_section {$animation_effect} question-section-id-{$mlw_question->question_id} slide{$mlw_qmn_section_count}'>";
+            } else {
+                if( $pagination_optoin == 1 ){
+                    $question_display .='<div class="qsm-auto-page-row qsm-apc-' . $current_page_number . '" style="display: none;">';
+                    $current_page_number++;
+                }else{
+                    if ($pages_count % $pagination_optoin == 1 || $pages_count == 1) { // beginning of the row or first.
+                        $question_display .='<div class="qsm-auto-page-row qsm-apc-' . $current_page_number . '" style="display: none;">';
+                        $current_page_number++;
+                    }
+                }
+            }                 
             $question_id_list .= $mlw_question->question_id . "Q";
             $mlw_qmn_section_count = $mlw_qmn_section_count + 1;
-            $style = '';
-            if(  $mlw_qmn_section_count != 1 && $pagination_optoin > 0 ){
-                $style = "style='display: none;'";
-            }
-            $question_display .= "<div class='quiz_section {$animation_effect} question-section-id-{$mlw_question->question_id} slide{$mlw_qmn_section_count}' {$style}>";
+            
+            $question_display .= "<div class='quiz_section {$animation_effect} question-section-id-{$mlw_question->question_id} slide{$mlw_qmn_section_count}'>";
 
             $question_display .= $mlwQuizMasterNext->pluginHelper->display_question($mlw_question->question_type_new, $mlw_question->question_id, $qmn_quiz_options);
 
@@ -930,11 +941,18 @@ class QMNQuizManager {
                 $question_display .= "<br /><br />";
             }
             $question_display .= "</div>";
+            if( $pagination_optoin == 0 ){
+                $question_display .= '</div><!-- .quiz_section -->';
+            } else if( $pagination_optoin == 1 ){
+                $question_display .= '</div><!-- .qsm-auto-page-row -->';
+            }else if ($pages_count % $pagination_optoin == 0 || $pages_count == count($qmn_quiz_questions)) { // end of the row or last
+                $question_display .= '</div><!-- .qsm-auto-page-row -->';
+            }
             $pages_count++;
         }
         if($enable_pagination_quiz){
             $question_display .=  "<span class='pages_count' style='display: none;'>";
-            $text_c = $pages_count . ' out of ' .$total_pagination;
+            $text_c = $current_page_number . __(' out of ', 'quiz-master-next') .$total_pagination;
             $question_display .= apply_filters('qsm_total_pages_count',$text_c,$pages_count,$total_pages_count);
             $question_display .=  "</span>";
         }
@@ -958,7 +976,7 @@ class QMNQuizManager {
         $comment_display = '';
         if (0 == $qmn_quiz_options->comment_section) {
             $mlw_qmn_section_count = $mlw_qmn_section_count + 1;
-            $comment_display .= "<div class='quiz_section slide" . $mlw_qmn_section_count . "'>";
+            $comment_display .= "<div class='quiz_section quiz_end qsm-auto-page-row qsm-quiz-comment-section slide" . $mlw_qmn_section_count . "' style='display: none;'>";
             $message_comments = wpautop(htmlspecialchars_decode($qmn_quiz_options->message_comment, ENT_QUOTES));
             $message_comments = apply_filters('mlw_qmn_template_variable_quiz_page', $message_comments, $qmn_array_for_variables);
             $comment_display .= "<label for='mlwQuizComments' class='mlw_qmn_comment_section_text'>$message_comments</label><br />";
@@ -989,7 +1007,7 @@ class QMNQuizManager {
         if( $pagination_optoin > 0 ){
             $style = "style='display: none;'";
         }
-        $section_display .= "<div class='quiz_section slide$mlw_qmn_section_count quiz_end' {$style}>";
+        $section_display .= "<div class='qsm-auto-page-row quiz_section quiz_end' {$style}>";
         if (!empty($qmn_quiz_options->message_end_template)) {
             $message_end = wpautop(htmlspecialchars_decode($qmn_quiz_options->message_end_template, ENT_QUOTES));
             $message_end = apply_filters('mlw_qmn_template_variable_quiz_page', $message_end, $qmn_array_for_variables);
@@ -1442,6 +1460,7 @@ class QMNQuizManager {
                                 }
                                 $user_answer = $results_array["user_text"];
                                 $correct_answer = $results_array["correct_text"];
+                                $user_compare_text = isset( $results_array["user_compare_text"] ) ? $results_array["user_compare_text"] : '';
                                 
                                 if( trim( $user_answer ) != '' ){
                                     if( $user_answer != 'No Answer Provided' ){
@@ -1473,7 +1492,8 @@ class QMNQuizManager {
                                     "points" => $answer_points,
                                     "category" => $question['category'],
                                     "question_type" => $question['question_type_new'],
-                                    "question_title" => isset( $question['settings']['question_title'] ) ? $question['settings']['question_title'] : ''
+                                    "question_title" => isset( $question['settings']['question_title'] ) ? $question['settings']['question_title'] : '',
+                                    "user_compare_text" => $user_compare_text
                                         ), $options, $quiz_data);
                             }
                             break;
@@ -1529,10 +1549,11 @@ class QMNQuizManager {
                             }
                             $user_answer = $results_array["user_text"];
                             $correct_answer = $results_array["correct_text"];
+                            $user_compare_text = isset( $results_array["user_compare_text"] ) ? $results_array["user_compare_text"] : '';
                             if( trim( $user_answer ) != '' ){
                                 if( $user_answer != 'No Answer Provided' ){
                                     $attempted_question++;
-                                }                                
+                                }   
                             }
                             // If a comment was submitted
                             if (isset($_POST["mlwComment" . $question['question_id']])) {
@@ -1558,7 +1579,8 @@ class QMNQuizManager {
                                 "points" => $answer_points,
                                 "category" => $question['category'],
                                 "question_type" => $question['question_type_new'],
-                                "question_title" => isset( $question['settings']['question_title'] ) ? $question['settings']['question_title'] : ''
+                                "question_title" => isset( $question['settings']['question_title'] ) ? $question['settings']['question_title'] : '',
+                                "user_compare_text" => $user_compare_text
                                     ), $options, $quiz_data);
                         }
                         break;
@@ -2140,7 +2162,7 @@ function qmn_total_tries_check($display, $qmn_quiz_options, $qmn_array_for_varia
 
 add_filter('qmn_begin_quiz', 'qmn_pagination_check', 10, 3);
 
-function qmn_pagination_check($display, $qmn_quiz_options, $qmn_array_for_variables) {
+function qmn_pagination_check($display, $qmn_quiz_options, $qmn_array_for_variables) {    
     if ($qmn_quiz_options->pagination != 0) {
         global $wpdb;
         global $qmn_json_data;
@@ -2151,7 +2173,7 @@ function qmn_pagination_check($display, $qmn_quiz_options, $qmn_array_for_variab
             $questions = QSM_Questions::load_questions_by_pages($qmn_quiz_options->quiz_id);
             $total_questions = count($questions);
         }
-        $display .= "<style>.quiz_section { display: none; }</style>";
+        //$display .= "<style>.quiz_section { display: none; }</style>";
 
         $qmn_json_data["pagination"] = array(
             'amount' => $qmn_quiz_options->pagination,

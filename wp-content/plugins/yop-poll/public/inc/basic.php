@@ -968,7 +968,7 @@ class YOP_Poll_Basic {
 		} else {
 			$show_results_only = 'false';
 		}
-		$poll_ready_for_output = '<div class="basic-yop-poll-container"'
+		$poll_ready_for_output = '<div class="yop-poll-container"'
 										. ' data-id="' . esc_attr( $poll->id ) . '"'
 										. ' data-ajax="1"'
 										. ' data-tid="' . esc_attr( $params['tracking_id'] ) . '"'
